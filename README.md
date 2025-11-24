@@ -41,24 +41,24 @@ Reset UI when cart becomes empty
 
 ### Screenshot
 
-![](./Screenshots/Screenshot%20(74).png)
-![](./Screenshots/Screenshot%20(75).png)
-![](./Screenshots/Screenshot%20(76).png)
-![](./Screenshots/Screenshot%20(77).png)
-![](./Screenshots/Screenshot%20(78).png)
+![](./Screenshots/Screenshot%20(228).png)
+![](./Screenshots/Screenshot%20(229).png)
+![](./Screenshots/Screenshot%20(230).png)
+![](./Screenshots/Screenshot%20(231).png)
+![](./Screenshots/Screenshot%20(233).png)
 
 
 ### Links
 
 - Solution URL: [@GitHub](https://github.com/Sir-josh01/Amazon-website-clone)
-- Live Site URL: [@vercel]()
+- Live Site URL: [@Live-demo](https://sir-josh01.github.io/Amazon-website-clone/amazon.html)
 
 ## My process
 This project wasn’t just about styling the Amazon homepage — it was a deep dive into structuring front-end logic the way real e-commerce systems behave. Below is the breakdown of what I worked on and the major concepts learned.
 
 ### Built with
 
-- Built With
+ Built With
 
 HTML5 (structure only)
 
@@ -131,7 +131,7 @@ A backend version using Node.js
 
 ### Useful resources
 
-- [@supersimpledev](https://www.supersimpledev.com)
+- [@supersimpledev](https://supersimple.dev/projects/amazon/)
 - [@Google](https://www.google.com) 
 
 
