@@ -50,7 +50,7 @@ Reset UI when cart becomes empty
 
 ### Links
 
-- Solution URL: [@GitHub](https://github.com/Sir-josh01/)
+- Solution URL: [@GitHub](https://github.com/Sir-josh01/Amazon-website-clone)
 - Live Site URL: [@vercel]()
 
 ## My process
@@ -79,17 +79,45 @@ Event-driven updates
 Full cart management using arrays
 Handling
 
-```html
-
-  <!-- Proud of this syntax -->
-
-```
-
-```css
-
-```
 
 ```js
+ function deliveryOptionsHTML(matchingProduct, cartItem) {
+    let html = "";
+
+    deliveryOptions.forEach((deliveryOption) => {
+      const today = dayjs();
+      const deliveryDate = today.add(deliveryOption.deliveryDays, "days");
+      const dateString = deliveryDate.format("dddd, MMMM D");
+
+      const priceString =
+        deliveryOption.priceCents === 0
+          ? "FREE"
+          : `$${formatCurrency(deliveryOption.priceCents)} - `;
+
+      const isChecked = deliveryOption.id === cartItem.deliveryOptionId;
+
+      html += `
+     <div class="delivery-option js-delivery-option" data-product-id="${
+       matchingProduct.id
+     }" data-delivery-option-id="${deliveryOption.id}">
+        <input type="radio"
+          ${isChecked ? "checked" : ""}
+          class="delivery-option-input"
+          name="delivery-option-${matchingProduct.id}">
+        <div>
+          <div class="delivery-option-date">
+            ${dateString}
+          </div>
+          <div class="delivery-option-price">
+           ${priceString} Shipping
+          </div>
+        </div>
+      </div>
+`;
+    });
+
+    return html;
+  }
 
 ```
 
@@ -103,8 +131,8 @@ A backend version using Node.js
 
 ### Useful resources
 
-- [supersimpledev](https://www.supersimpledev.com) - 
-- [Google](https://www.google.com) 
+- [@supersimpledev](https://www.supersimpledev.com)
+- [@Google](https://www.google.com) 
 
 
 ## Author
